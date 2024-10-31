@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+}
+.container{
+    font-size: 10px;
+    width: 40em;
+    height: 40em;
+    position: relative;
+}
+.sun{
+    position: absolute;
+    top: 15em;
+    left: 15em;
+    width: 10em;
+    height: 10em;
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 3em white;            
+}
+.earth, .moon, .sukro, .bud, .mongol,
+.brospoti, .soni, .urenes, .nepcun{
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+}
+.ring{
+    position: absolute;
+    border-style: solid;
+    border-color: rgb(111, 89, 22) transparent transparent transparent;
+    border-width: 0.2em 0.2em 0 0;
+    border-radius: 50%;
+}
+.upogrho1, .upogrho2{
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+}
+.bud{
+    top: 11em;
+    left: 11em;
+    width: 18em;
+    height: 18em;
+    animation: orbit 15.5s linear infinite;
+
+}
+.bud::before{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    top: 1.8em;
+    right: 2.2em;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: rgb(128, 29, 14);
+    box-shadow: 0 0 3em white;
+}
+.sukro{
+    top: 8em;
+    left: 8em;
+    width: 24em;
+    height: 24em;
+    animation: orbit 20.5s linear infinite;
+
+}
+.sukro::before{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    top: 2.7em;
+    right: 2.7em;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: rgb(148, 27, 39);
+    box-shadow: 0 0 3em white;
+}
+.earth{
+    top: 5em;
+    left: 5em;
+    width: 30em;
+    height: 30em;
+    animation: orbit 25.1s linear infinite;
+
+}
+.earth::before{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    top: 2.8em;
+    right: 3.8em;
+    width: 2em;
+    height: 2em;
+    background-color: aqua;
+    box-shadow: 0 0 3em rgb(39, 154, 85);
+}
+.moon{
+    top: 1.5em;
+    right: 2.2em;
+    width: 4.6em;
+    height: 4.6em;
+    animation: orbit 10.5s linear infinite;
+}
+.moon::before{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    top: .1em;
+    right: .1em;
+    width: 1em;
+    height: 1em;
+    background-color: silver;
+    box-shadow: 0 0 3em white;
+} 
+.mongol{
+    top: .5em;
+    left: .5em;
+    width: 40em;
+    height: 40em;
+    animation: orbit 30.5s linear infinite;
+}
+.mongol::before{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    top: 4.5em;
+    right: 4.5em;
+    width: 2.7em;
+    height: 2.7em;
+    background-color: rgb(206, 183, 28);
+    box-shadow: 0 0 3em rgb(187, 197, 102);
+}
+.upogrho1{
+    top: 3.5em;
+    right: 3.5em;
+    width: 4.5em;
+    height: 4.5em;
+    animation: orbit 13s linear infinite;
+}
+.upogrho1::before{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    top: .1em;
+    right: .1em;
+    width: 1em;
+    height: 1em;
+    background-color: blanchedalmond;
+}
+.upogrho2{
+    top: 2.8em;
+    right: 2.8em;
+    width: 6em;
+    height: 6em;
+    animation: orbit 15.5s linear infinite;
+}
+.upogrho2::before{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    top: .5em;
+    right: .5em;
+    width: .8em;
+    height: .8em;
+    background-color: blueviolet;
+}
+.brospoti{
+    top: -4.5em;
+    left: -4.5em;
+    width: 50em;
+    height: 50em;
+    animation: orbit 35.5s linear infinite;
+}
+.brospoti::before{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    top: 5.6em;
+    right: 5.6em;
+    width: 3.2em;
+    height: 3.2em;
+    background-color: rgb(141, 131, 83);
+    box-shadow: 0 0 3em rgb(219, 188, 74);
+}
+.soni{
+    top: -9em;
+    left: -9em;
+    width: 60em;
+    height: 60em;
+    animation: orbit 40.1s linear infinite;
+}
+.ring{
+    top: 5.8em;
+    right: 5.8em;
+    width: 6em;
+    height: 6em;
+    animation: orbit 0.04s linear infinite;
+}
+.soni::before{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    top: 7.1em;
+    right: 7.1em;
+    width: 3.5em;
+    height: 3.5em;
+    background-color: rgb(127, 193, 94);
+    box-shadow: 0 0 3em rgb(106, 31, 31);
+}
+.urenes{
+    top: -13em;
+    left: -13em;
+    width: 68em;
+    height: 68em;
+    animation: orbit 45.5s linear infinite;
+}
+.urenes::before{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    top: 9.2em;
+    right: 9.2em;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: rgb(40, 85, 17);
+    box-shadow: 0 0 3em white;
+}
+.nepcun{
+    top: -16.5em;
+    left: -16.5em;
+    width: 75em;
+    height: 75em;
+    animation: orbit 50.5s linear infinite;
+}
+.nepcun::before{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    top: 10.2em;
+    right: 10.2em;
+    width: 1.5em;
+    height: 1.5em;
+    background-color:  rgb(30, 60, 15);
+    box-shadow: 0 0 3em rgb(159, 183, 176);
+}
+@keyframes orbit {
+    to{
+        transform: rotate(360deg);
+    }
+}
